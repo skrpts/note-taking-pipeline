@@ -1,0 +1,43 @@
+# --- Identity ---
+name: "note-taking-pipeline"
+display_name: "Note-Taking Pipeline"
+description: "Structured note-taking and knowledge synthesis from lectures, readings, and seminars"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/note-taking-pipeline"
+
+# --- Discovery (Hub) ---
+category: "student"
+tags:
+  - "note-taking"
+  - "knowledge-management"
+  - "study"
+  - "revision"
+  - "cornell-method"
+  - "spaced-repetition"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "lecture-content"
+    - "academic-sources"
+
+# --- Contents ---
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 14

@@ -1,0 +1,108 @@
+---
+type: workflow
+id: note-taking-pipeline
+title: Note-Taking Pipeline
+description: "End-to-end workflow for structured note-taking, knowledge linking, and synthesis from lectures, readings, and seminars"
+tags: [Production, Tested]
+connections:
+  - target: content-distillation
+    type: uses
+  - target: knowledge-linking
+    type: uses
+  - target: spaced-repetition-design
+    type: uses
+  - target: lecture-note-structurer
+    type: uses
+  - target: reading-note-extractor
+    type: uses
+  - target: concept-map-builder
+    type: uses
+  - target: flashcard-generator
+    type: uses
+  - target: weekly-knowledge-synthesiser
+    type: uses
+  - target: claude-service
+    type: runs_on
+  - target: note-taking-methods-reference
+    type: references
+  - target: effective-note-taking-guide
+    type: references
+  - target: cornell-notes-template
+    type: uses
+  - target: weekly-synthesis-template
+    type: uses
+metadata:
+  estimated_duration: "15-45 minutes"
+  trigger: manual
+---
+
+## Overview
+
+The Note-Taking Pipeline transforms raw academic input — lectures, readings, seminars — into structured, interconnected knowledge that supports long-term retention and exam readiness. It moves through five stages: structuring raw notes, extracting key ideas from readings, linking concepts across sources, generating flashcards for active recall, and synthesising everything into a weekly knowledge summary.
+
+## Pipeline Stages
+
+### Stage 1: Capture and Structure
+
+**Trigger:** After a lecture, seminar, or reading session.
+
+Invoke the **lecture-note-structurer** prompt using the **content-distillation** skill. Feed in raw notes, recordings transcripts, or slide content. The output is a structured document following the Cornell method (or outline method, depending on user preference) with clear sections for main notes, cue questions, and a summary.
+
+**Input:** Raw lecture notes, transcript, or slide deck content via `{{raw_notes}}`
+**Output:** Structured notes document using the cornell-notes-template
+**Error handling:** If input is too short (fewer than 100 words), prompt the user to add more detail or context before proceeding.
+
+### Stage 2: Reading Extraction
+
+**Trigger:** After completing an academic reading.
+
+Invoke the **reading-note-extractor** prompt using the **content-distillation** skill. This stage pulls out the key arguments, supporting evidence, methodological approaches, and open questions from a reading. It produces a structured reading note that slots into the student's knowledge base.
+
+**Input:** Reading content or summary via `{{reading_content}}`, plus `{{reading_citation}}`
+**Output:** Structured reading note with arguments, evidence, and questions
+**Error handling:** If the reading lacks a clear argument structure (e.g. a textbook chapter vs. a journal article), adapt the extraction to focus on key concepts and definitions instead.
+
+### Stage 3: Knowledge Linking
+
+**Trigger:** After accumulating 3+ structured notes from Stages 1-2.
+
+Invoke the **concept-map-builder** prompt using the **knowledge-linking** skill. This stage identifies connections between ideas across multiple sources — shared concepts, contradictions, supporting evidence, and gaps. The output is a concept map that shows how the week's learning fits together.
+
+**Input:** Multiple structured notes via `{{notes_collection}}`
+**Output:** Concept map with nodes (concepts) and edges (relationships)
+**Error handling:** If fewer than 3 notes are provided, proceed but flag that the concept map will be sparse. Suggest the student revisit after more notes are captured.
+
+### Stage 4: Flashcard Generation
+
+**Trigger:** After Stage 3 completes, or on demand for any structured note.
+
+Invoke the **flashcard-generator** prompt using the **spaced-repetition-design** skill. This stage creates flashcards that test understanding rather than mere recall, using active recall principles. Cards are tagged by topic and difficulty to support spaced repetition scheduling.
+
+**Input:** Structured notes and concept map via `{{source_notes}}`, plus `{{target_count}}`
+**Output:** Set of flashcards with front/back, topic tag, and difficulty level
+**Error handling:** If the source material is too narrow for the requested number of flashcards, reduce the count and explain why. Never pad with trivial or repetitive cards.
+
+### Stage 5: Weekly Synthesis
+
+**Trigger:** End of each study week, or before a revision session.
+
+Invoke the **weekly-knowledge-synthesiser** prompt using the **knowledge-linking** skill. This stage consolidates all notes, reading extractions, and concept maps from the week into a single summary document. It highlights key themes, unresolved questions, and areas needing further study.
+
+**Input:** All notes and maps from the week via `{{weekly_notes}}`, plus `{{module_name}}`
+**Output:** Weekly synthesis document using the weekly-synthesis-template
+**Error handling:** If the week's notes span multiple unrelated modules, produce separate synthesis sections per module rather than forcing artificial connections.
+
+## Completion Criteria
+
+The pipeline is complete when the student has:
+1. Structured notes for every lecture and reading in the week
+2. A concept map linking ideas across sources
+3. A set of flashcards ready for spaced repetition practice
+4. A weekly synthesis document summarising key learning
+
+## Notes
+
+- Stages 1 and 2 can run in parallel as notes and readings come in throughout the week
+- Stage 3 benefits from having both lecture notes and reading notes available
+- Stage 4 can run independently on any individual note, but produces better cards when fed the concept map as well
+- Stage 5 should be the final step each week, ideally completed before the next week's lectures begin
