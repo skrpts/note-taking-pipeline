@@ -5,7 +5,7 @@ title: Spaced Repetition Design
 description: "Designs effective flashcards and retrieval practice materials using evidence-based spaced repetition and active recall principles"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: note-taking-methods-reference
     type: references

@@ -5,7 +5,7 @@ title: Content Distillation
 description: "Transforms raw, unstructured academic content into clean, organised notes using evidence-based note-taking methods"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: note-taking-methods-reference
     type: references

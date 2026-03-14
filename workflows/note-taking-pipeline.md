@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: weekly-knowledge-synthesiser
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: note-taking-methods-reference
     type: references
@@ -106,3 +106,48 @@ The pipeline is complete when the student has:
 - Stage 3 benefits from having both lecture notes and reading notes available
 - Stage 4 can run independently on any individual note, but produces better cards when fed the concept map as well
 - Stage 5 should be the final step each week, ideally completed before the next week's lectures begin
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.raw_lecture_notes}}` | Yes | Raw lecture notes | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.transcript}}` | Yes | transcript | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.or_slide_deck_content}}` | Yes | or slide deck content via {{raw_notes}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.reading_content_or_summary}}` | No | Reading content or summary via {{reading_content}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Structured notes document using the cornell-notes-template | Structured notes document using the cornell-notes-template |
+| Structured reading note | Structured reading note with arguments, evidence, and questions |
+| Concept map | Concept map with nodes  and edges |
+| Set of flashcards | Set of flashcards with front/back, topic tag, and difficulty level |
+| Weekly synthesis document using the weekly-synthesis-template | Weekly synthesis document using the weekly-synthesis-template |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Raw Lecture Notes: "Paste the relevant brief, notes, source material, or dataset here."
+Transcript: "Paste the relevant brief, notes, source material, or dataset here."
+Or Slide Deck Content: "Paste the relevant brief, notes, source material, or dataset here."
+Reading Content Or Summary: "Paste the relevant brief, notes, source material, or dataset here."
+```
+

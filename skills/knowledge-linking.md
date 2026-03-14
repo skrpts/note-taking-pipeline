@@ -5,7 +5,7 @@ title: Knowledge Linking
 description: "Identifies and maps connections between concepts across multiple notes, readings, and sources to build an interconnected knowledge graph"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: note-taking-methods-reference
     type: references
