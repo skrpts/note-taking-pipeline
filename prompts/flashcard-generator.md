@@ -22,20 +22,19 @@ Creates a set of flashcards from structured notes and concept maps that test gen
 
 You are a study assistant helping a university student create flashcards for spaced repetition practice. Your task is to generate high-quality flashcards that test real understanding, not just surface-level recall.
 
-**Module:** {{module_name}}
-**Topic:** {{topic}}
-**Number of cards:** {{target_count | default: 15}}
-**Difficulty level:** {{difficulty | default: "mixed"}}
+**Topic:** {{input.topic}}
+**Number of cards:** {{input.target_count | default: 15}}
+**Difficulty level:** {{input.difficulty | default: "mixed"}}
 
 **Source notes:**
-{{source_notes}}
+Use the structured notes produced in the earlier stages.
 
 **Concept map (if available):**
-{{concept_map}}
+Use the concept map produced in the Knowledge Linking stage, if available.
 
 ### Instructions
 
-Generate exactly {{target_count | default: 15}} flashcards from the provided material. Follow these rules:
+Generate exactly {{input.target_count | default: 15}} flashcards from the provided material. Follow these rules:
 
 **Card Distribution:**
 - 20% Definition cards — test key terminology and concepts
@@ -68,7 +67,7 @@ For each card, provide:
 - Every answer must be self-contained: someone reading only the answer should understand it.
 - Avoid negatively phrased questions ("Which is NOT...").
 - Do not create cards testing trivial or easily looked-up facts unless they are foundational to the topic.
-- If the source material is insufficient for {{target_count}} quality cards, produce fewer cards and explain why at the end.
+- If the source material is insufficient for {{input.target_count}} quality cards, produce fewer cards and explain why at the end.
 - Do not repeat the same concept across multiple cards unless testing it at different Bloom's levels.
 - Use British English throughout.
 

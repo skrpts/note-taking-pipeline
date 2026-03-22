@@ -111,10 +111,21 @@ The pipeline is complete when the student has:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.raw_lecture_notes}}` | Yes | Raw lecture notes | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.transcript}}` | Yes | transcript | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.or_slide_deck_content}}` | Yes | or slide deck content via {{raw_notes}} | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.reading_content_or_summary}}` | No | Reading content or summary via {{reading_content}} | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.module_name}}` | Yes | The module or course name | `Introduction to Sociology` |
+| `{{input.raw_notes}}` | Yes | Raw lecture notes, transcript, or slide deck content | `Paste your raw lecture notes, transcript, or slide content here.` |
+| `{{input.lecture_title}}` | Yes | Title of the lecture | `Social Stratification and Class` |
+| `{{input.lecture_date}}` | Yes | Date of the lecture | `2026-03-18` |
+| `{{input.note_method}}` | No | Preferred note-taking method (cornell or outline) | `cornell` |
+| `{{input.reading_content}}` | No | Reading content or summary for extraction | `Paste the academic reading content here.` |
+| `{{input.reading_citation}}` | No | Full citation for the reading | `Smith, J. (2024) 'Class in Modern Britain', Sociology Review, 12(3), pp. 45-62.` |
+| `{{input.text_type}}` | No | Type of text (journal-article, textbook-chapter, etc.) | `journal-article` |
+| `{{input.topic_theme}}` | No | Topic or theme for concept mapping | `Social stratification` |
+| `{{input.time_period}}` | No | Time period for concept map | `this week` |
+| `{{input.topic}}` | No | Topic for flashcard generation | `Social stratification` |
+| `{{input.target_count}}` | No | Number of flashcards to generate | `15` |
+| `{{input.difficulty}}` | No | Flashcard difficulty level | `mixed` |
+| `{{input.week_number}}` | No | Week number for synthesis | `5` |
+| `{{input.week_start_date}}` | No | Week commencing date for synthesis | `2026-03-16` |
 
 ## Outputs
 
@@ -145,9 +156,9 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Raw Lecture Notes: "Paste the relevant brief, notes, source material, or dataset here."
-Transcript: "Paste the relevant brief, notes, source material, or dataset here."
-Or Slide Deck Content: "Paste the relevant brief, notes, source material, or dataset here."
-Reading Content Or Summary: "Paste the relevant brief, notes, source material, or dataset here."
+Module Name: "Introduction to Sociology"
+Raw Notes: "Today's lecture covered social stratification. Key points: Weber vs Marx on class..."
+Lecture Title: "Social Stratification and Class"
+Lecture Date: "2026-03-18"
 ```
 

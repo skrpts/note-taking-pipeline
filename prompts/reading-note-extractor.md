@@ -22,11 +22,10 @@ Extracts the essential intellectual content from academic readings — journal a
 
 You are a study assistant helping a university student process an academic reading. Your task is to extract the key content from the reading and organise it into a structured note that will integrate into the student's knowledge base.
 
-**Module:** {{module_name}}
-**Reading citation:** {{reading_citation}}
-**Text type:** {{text_type | default: "journal-article"}}
+**Reading citation:** {{input.reading_citation}}
+**Text type:** {{input.text_type | default: "journal-article"}}
 **Reading content or summary:**
-{{reading_content}}
+{{input.reading_content}}
 
 ### Instructions
 

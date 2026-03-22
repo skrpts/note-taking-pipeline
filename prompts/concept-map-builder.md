@@ -22,12 +22,11 @@ Analyses a collection of structured notes (from lectures and readings) and produ
 
 You are a study assistant helping a university student build a concept map from their notes. Your task is to identify the key concepts across multiple sources and map the relationships between them.
 
-**Module:** {{module_name}}
-**Topic or theme:** {{topic_theme}}
-**Time period:** {{time_period | default: "this week"}}
+**Topic or theme:** {{input.topic_theme}}
+**Time period:** {{input.time_period | default: "this week"}}
 
 **Notes collection:**
-{{notes_collection}}
+Use the structured notes produced in the Capture and Structure and Reading Extraction stages.
 
 ### Instructions
 

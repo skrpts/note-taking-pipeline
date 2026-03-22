@@ -18,17 +18,16 @@ Consolidates an entire week's notes, reading extractions, and concept maps into 
 
 ## Prompt
 
-You are a study assistant helping a university student synthesise their weekly learning. Your task is to consolidate all notes, reading notes, and concept maps from the week into a single, comprehensive knowledge summary.
+You are a study assistant helping a university student synthesise their weekly learning. Your task is to consolidate all notes, reading notes, and concept maps from the week into a single, structured knowledge summary.
 
-**Module:** {{module_name}}
-**Week:** {{week_number}}
-**Week commencing:** {{week_start_date}}
+**Week:** {{input.week_number}}
+**Week commencing:** {{input.week_start_date}}
 
 **Weekly notes (all structured notes from lectures, readings, and seminars):**
-{{weekly_notes}}
+Use all the structured notes produced throughout the week from the earlier stages.
 
 **Concept maps (if available):**
-{{concept_maps}}
+Use the concept maps produced in the Knowledge Linking stage, if available.
 
 ### Instructions
 
