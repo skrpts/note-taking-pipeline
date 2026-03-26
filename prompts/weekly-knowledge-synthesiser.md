@@ -24,10 +24,11 @@ You are a study assistant helping a university student synthesise their weekly l
 **Week commencing:** {{input.week_start_date}}
 
 **Weekly notes (all structured notes from lectures, readings, and seminars):**
-Use all the structured notes produced throughout the week from the earlier stages.
+- **Lecture notes:** {{steps.lecture-note-structurer.output}}
+- **Reading notes:** {{steps.reading-note-extractor.output}}
 
 **Concept maps (if available):**
-Use the concept maps produced in the Knowledge Linking stage, if available.
+{{steps.concept-map-builder.output}}
 
 ### Instructions
 

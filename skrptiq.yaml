@@ -2,7 +2,7 @@
 name: "note-taking-pipeline"
 display_name: "Note-Taking Pipeline"
 description: "Structured note-taking and knowledge synthesis from lectures, readings, and seminars"
-version: "1.2.0"
+version: "1.3.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---

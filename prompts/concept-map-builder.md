@@ -26,7 +26,8 @@ You are a study assistant helping a university student build a concept map from 
 **Time period:** {{input.time_period | default: "this week"}}
 
 **Notes collection:**
-Use the structured notes produced in the Capture and Structure and Reading Extraction stages.
+- **Lecture notes:** {{steps.lecture-note-structurer.output}}
+- **Reading notes:** {{steps.reading-note-extractor.output}}
 
 ### Instructions
 

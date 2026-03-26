@@ -27,10 +27,11 @@ You are a study assistant helping a university student create flashcards for spa
 **Difficulty level:** {{input.difficulty | default: "mixed"}}
 
 **Source notes:**
-Use the structured notes produced in the earlier stages.
+- **Lecture notes:** {{steps.lecture-note-structurer.output}}
+- **Reading notes:** {{steps.reading-note-extractor.output}}
 
 **Concept map (if available):**
-Use the concept map produced in the Knowledge Linking stage, if available.
+{{steps.concept-map-builder.output}}
 
 ### Instructions
 
