@@ -24,7 +24,8 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions: []
   data_handling:
     - "lecture-content"
