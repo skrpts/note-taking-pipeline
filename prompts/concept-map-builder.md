@@ -3,7 +3,7 @@ type: prompt
 id: concept-map-builder
 title: Concept Map Builder
 description: "Builds a concept map linking ideas across multiple sources to reveal connections and gaps"
-tags: [Production]
+tags: [Production, learning:comprehension, learning:synthesis]
 connections:
   - target: knowledge-linking
     type: derived_from

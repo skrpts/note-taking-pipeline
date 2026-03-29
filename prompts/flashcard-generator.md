@@ -3,7 +3,7 @@ type: prompt
 id: flashcard-generator
 title: Flashcard Generator
 description: "Spaced-repetition-aware flashcard generator — creates Bloom's-taxonomy-tagged cards with difficulty levels for scheduled review"
-tags: [Production]
+tags: [Production, learning:retention, learning:comprehension]
 connections:
   - target: spaced-repetition-design
     type: derived_from

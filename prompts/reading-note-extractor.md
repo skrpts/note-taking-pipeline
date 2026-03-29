@@ -3,7 +3,7 @@ type: prompt
 id: reading-note-extractor
 title: Reading Note Extractor
 description: "Extracts key arguments, evidence, and questions from academic readings into structured notes"
-tags: [Production]
+tags: [Production, research:literature, learning:comprehension]
 connections:
   - target: content-distillation
     type: derived_from

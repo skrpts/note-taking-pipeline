@@ -3,7 +3,7 @@ type: source
 id: note-taking-methods-reference
 title: Note-Taking Methods Reference
 description: "Reference guide to evidence-based note-taking methods including Cornell, Zettelkasten, outline, and mind mapping"
-tags: [Production, Tested]
+tags: [Production, Tested, learning:comprehension, learning:synthesis]
 connections: []
 metadata:
   source_type: "reference-guide"

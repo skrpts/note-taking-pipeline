@@ -3,7 +3,7 @@ type: prompt
 id: lecture-note-structurer
 title: Lecture Note Structurer
 description: "Structures raw lecture notes into an organised, searchable format using the Cornell or outline method"
-tags: [Production]
+tags: [Production, learning:comprehension, learning:synthesis]
 connections:
   - target: content-distillation
     type: derived_from

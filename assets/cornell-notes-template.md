@@ -3,7 +3,7 @@ type: asset
 id: cornell-notes-template
 title: Cornell Notes Template
 description: "Reusable template for structuring lecture and reading notes using the Cornell method"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, research:literature, learning:comprehension]
 connections:
   - target: content-distillation
     type: uses
