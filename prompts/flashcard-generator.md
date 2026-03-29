@@ -2,7 +2,7 @@
 type: prompt
 id: flashcard-generator
 title: Flashcard Generator
-description: "Generates effective flashcards from notes using active recall and spaced repetition principles"
+description: "Spaced-repetition-aware flashcard generator — creates Bloom's-taxonomy-tagged cards with difficulty levels for scheduled review"
 tags: [Production]
 connections:
   - target: spaced-repetition-design

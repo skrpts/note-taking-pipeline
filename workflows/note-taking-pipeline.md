@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: spaced-repetition-design
     type: uses
+  - target: note-taking
+    type: uses
   - target: lecture-note-structurer
     type: uses
   - target: reading-note-extractor
@@ -20,6 +22,8 @@ connections:
   - target: flashcard-generator
     type: uses
   - target: weekly-knowledge-synthesiser
+    type: uses
+  - target: take-notes
     type: uses
   - target: llm-service
     type: runs_on
