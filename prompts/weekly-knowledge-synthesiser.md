@@ -3,7 +3,7 @@ type: prompt
 id: weekly-knowledge-synthesiser
 title: Weekly Knowledge Synthesiser
 description: "Synthesises a week's notes into a consolidated knowledge summary highlighting themes, connections, and gaps"
-tags: [Production, research:synthesis, learning:comprehension, learning:synthesis]
+tags: [Production, Learning, Research]
 connections:
   - target: knowledge-linking
     type: derived_from

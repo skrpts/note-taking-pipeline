@@ -3,7 +3,7 @@ type: workflow
 id: note-taking-pipeline
 title: Note-Taking Pipeline
 description: "End-to-end workflow for structured note-taking, knowledge linking, and synthesis from lectures, readings, and seminars"
-tags: [Production, Tested, learning:comprehension, learning:synthesis]
+tags: [Production, Tested, Learning, Research]
 connections:
   - target: content-distillation
     type: uses

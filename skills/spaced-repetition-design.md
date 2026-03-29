@@ -3,7 +3,7 @@ type: skill
 id: spaced-repetition-design
 title: Spaced Repetition Design
 description: "Designs effective flashcards and retrieval practice materials using evidence-based spaced repetition and active recall principles"
-tags: [Production, Tested, learning:retention, learning:comprehension]
+tags: [Production, Tested, Learning, Research]
 connections:
   - target: llm-service
     type: runs_on

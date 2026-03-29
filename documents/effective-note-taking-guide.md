@@ -3,7 +3,7 @@ type: document
 id: effective-note-taking-guide
 title: Effective Note-Taking Guide
 description: "Guide to building a personal knowledge management system as a student"
-tags: [Production, Customer-Facing, learning:comprehension, learning:synthesis]
+tags: [Production, Customer-Facing, Audience, Learning]
 connections:
   - target: note-taking-methods-reference
     type: references

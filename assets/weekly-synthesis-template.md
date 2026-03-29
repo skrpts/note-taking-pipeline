@@ -3,7 +3,7 @@ type: asset
 id: weekly-synthesis-template
 title: Weekly Synthesis Template
 description: "Reusable template for consolidating a week's notes into a knowledge summary"
-tags: [Production, Customer-Facing, learning:comprehension, learning:synthesis]
+tags: [Production, Customer-Facing, Learning, Research]
 connections:
   - target: knowledge-linking
     type: uses

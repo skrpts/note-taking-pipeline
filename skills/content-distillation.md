@@ -3,7 +3,7 @@ type: skill
 id: content-distillation
 title: Content Distillation
 description: "Transforms raw, unstructured academic content into clean, organised notes using evidence-based note-taking methods"
-tags: [Production, Tested, learning:comprehension, learning:synthesis]
+tags: [Production, Tested, Academic, Learning]
 connections:
   - target: llm-service
     type: runs_on
