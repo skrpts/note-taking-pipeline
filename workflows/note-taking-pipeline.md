@@ -38,6 +38,10 @@ connections:
 metadata:
   estimated_duration: "15-45 minutes"
   trigger: manual
+  - target: plan-studies
+    type: uses
+  - target: critical-thinking-framework
+    type: references
 ---
 
 ## Overview
