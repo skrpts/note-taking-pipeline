@@ -35,12 +35,12 @@ connections:
     type: uses
   - target: weekly-synthesis-template
     type: uses
+  - target: plan-studies
+  - target: critical-thinking-framework
 metadata:
   estimated_duration: "15-45 minutes"
   trigger: manual
-  - target: plan-studies
     type: uses
-  - target: critical-thinking-framework
     type: references
 ---
 
