@@ -27,11 +27,11 @@ You are a study assistant helping a university student create flashcards for spa
 **Difficulty level:** {{input.difficulty | default: "mixed"}}
 
 **Source notes:**
-- **Lecture notes:** {{steps.lecture-note-structurer.output}}
-- **Reading notes:** {{steps.reading-note-extractor.output}}
+- **Lecture notes:** {{steps.Content Distillation.output}}
+- **Reading notes:** {{steps.Content Distillation.output}}
 
 **Concept map (if available):**
-{{steps.concept-map-builder.output}}
+{{steps.Knowledge Linking.output}}
 
 ### Instructions
 

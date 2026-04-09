@@ -24,11 +24,11 @@ You are a study assistant helping a university student synthesise their weekly l
 **Week commencing:** {{input.week_start_date}}
 
 **Weekly notes (all structured notes from lectures, readings, and seminars):**
-- **Lecture notes:** {{steps.lecture-note-structurer.output}}
-- **Reading notes:** {{steps.reading-note-extractor.output}}
+- **Lecture notes:** {{steps.Content Distillation.output}}
+- **Reading notes:** {{steps.Content Distillation.output}}
 
 **Concept maps (if available):**
-{{steps.concept-map-builder.output}}
+{{steps.Knowledge Linking.output}}
 
 ### Instructions
 
