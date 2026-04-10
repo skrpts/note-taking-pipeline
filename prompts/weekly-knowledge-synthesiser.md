@@ -28,7 +28,7 @@ You are a study assistant helping a university student synthesise their weekly l
 - **Reading notes:** {{steps.Content Distillation.output}}
 
 **Concept maps (if available):**
-{{steps.Knowledge Linking.output}}
+{{steps.previous.output}}
 
 ### Instructions
 
