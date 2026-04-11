@@ -4,6 +4,37 @@ id: lecture-note-structurer
 title: Lecture Note Structurer
 description: "Structures raw lecture notes into an organised, searchable format using the Cornell or outline method"
 tags: [Production, Learning, Research]
+inputs:
+  module_name:
+    label: "Module Name"
+    description: "The name of the course module or subject"
+    example: "Introduction to Macroeconomics"
+    required: true
+    type: text
+  lecture_title:
+    label: "Lecture Title"
+    description: "The title of the lecture"
+    example: "Introduction to Quantum Mechanics"
+    required: true
+    type: text
+  lecture_date:
+    label: "Lecture Date"
+    description: "When the lecture took place"
+    example: "2026-04-10"
+    required: true
+    type: text
+  note_method:
+    label: "Note Method"
+    description: "The note-taking method to use"
+    example: "cornell"
+    required: true
+    type: text
+  raw_notes:
+    label: "Raw Notes"
+    description: "Your raw notes to be processed and structured"
+    example: "[Paste your notes here]"
+    required: true
+    type: text
 connections:
   - target: content-distillation
     type: derived_from

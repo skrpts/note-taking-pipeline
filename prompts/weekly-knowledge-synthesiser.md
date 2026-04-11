@@ -4,6 +4,19 @@ id: weekly-knowledge-synthesiser
 title: Weekly Knowledge Synthesiser
 description: "Synthesises a week's notes into a consolidated knowledge summary highlighting themes, connections, and gaps"
 tags: [Production, Learning, Research]
+inputs:
+  week_number:
+    label: "Week Number"
+    description: "The week number"
+    example: "15"
+    required: true
+    type: text
+  week_start_date:
+    label: "Week Start Date"
+    description: "The start date of the week"
+    example: "2026-04-07"
+    required: true
+    type: text
 connections:
   - target: knowledge-linking
     type: derived_from

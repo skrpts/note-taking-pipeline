@@ -4,6 +4,25 @@ id: take-notes
 title: Take Notes
 description: "Core prompt for structuring study notes"
 tags: [Production, Learning, Research]
+inputs:
+  module_name:
+    label: "Module Name"
+    description: "The name of the course module or subject"
+    example: "Introduction to Macroeconomics"
+    required: true
+    type: text
+  topic:
+    label: "Topic"
+    description: "The main subject or topic to address"
+    example: "The impact of remote work on team productivity"
+    required: true
+    type: text
+  study_material:
+    label: "Study Material"
+    description: "The material to study — lecture notes, textbook chapters, or readings"
+    example: "[Paste lecture notes or reading material here]"
+    required: true
+    type: text
 connections:
   - target: note-taking
     type: derived_from

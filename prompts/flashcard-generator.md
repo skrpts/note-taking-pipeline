@@ -4,6 +4,31 @@ id: flashcard-generator
 title: Flashcard Generator
 description: "Spaced-repetition-aware flashcard generator — creates Bloom's-taxonomy-tagged cards with difficulty levels for scheduled review"
 tags: [Production, Learning, Research]
+inputs:
+  topic:
+    label: "Topic"
+    description: "The main subject or topic to address"
+    example: "The impact of remote work on team productivity"
+    required: true
+    type: text
+  target_count:
+    label: "Target Count"
+    description: "Number of items to generate"
+    example: "15"
+    required: true
+    type: text
+  difficulty:
+    label: "Difficulty"
+    description: "Difficulty level for practice questions"
+    example: "mixed"
+    required: true
+    type: text
+  target_count:
+    label: "Target Count"
+    description: "How many items to produce"
+    example: "10"
+    required: true
+    type: text
 connections:
   - target: spaced-repetition-design
     type: derived_from

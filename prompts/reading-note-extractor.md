@@ -4,6 +4,25 @@ id: reading-note-extractor
 title: Reading Note Extractor
 description: "Extracts key arguments, evidence, and questions from academic readings into structured notes"
 tags: [Production, Academic, Learning, Research]
+inputs:
+  reading_citation:
+    label: "Reading Citation"
+    description: "The full citation for the reading"
+    example: "Smith, J. (2024). Understanding Cognition. Oxford University Press."
+    required: true
+    type: text
+  text_type:
+    label: "Text Type"
+    description: "The type of text being translated"
+    example: "journal-article"
+    required: true
+    type: text
+  reading_content:
+    label: "Reading Content"
+    description: "The text from the reading to process"
+    example: "[Paste reading content here]"
+    required: true
+    type: text
 connections:
   - target: content-distillation
     type: derived_from

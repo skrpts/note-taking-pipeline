@@ -4,6 +4,19 @@ id: concept-map-builder
 title: Concept Map Builder
 description: "Builds a concept map linking ideas across multiple sources to reveal connections and gaps"
 tags: [Production, Learning, Research]
+inputs:
+  topic_theme:
+    label: "Topic or Theme"
+    description: "The topic or theme for the content"
+    example: "Quarterly product update"
+    required: true
+    type: text
+  time_period:
+    label: "Time Period"
+    description: "The time period to review"
+    example: "this week"
+    required: true
+    type: text
 connections:
   - target: knowledge-linking
     type: derived_from
