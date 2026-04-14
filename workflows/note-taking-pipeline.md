@@ -26,6 +26,14 @@ connections:
 metadata:
   estimated_duration: "15-45 minutes"
   trigger: manual
+output_step: "weekly-synthesis-template"
+composite_steps:
+  - "content-distillation"
+  - "knowledge-linking"
+  - "spaced-repetition-design"
+  - "note-taking"
+  - "cornell-notes-template"
+  - "weekly-synthesis-template"
 execution:
   - skill: "content-distillation"
     step_type: "synthesis"
