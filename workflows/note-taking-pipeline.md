@@ -13,6 +13,8 @@ connections:
     type: uses
   - target: note-taking
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: note-taking-methods-reference
@@ -26,7 +28,7 @@ connections:
 metadata:
   estimated_duration: "15-45 minutes"
   trigger: manual
-output_step: "weekly-synthesis-template"
+output_step: "language-polish"
 composite_steps:
   - "content-distillation"
   - "knowledge-linking"
@@ -34,6 +36,7 @@ composite_steps:
   - "note-taking"
   - "cornell-notes-template"
   - "weekly-synthesis-template"
+  - "language-polish"
 execution:
   - skill: "content-distillation"
     step_type: "synthesis"
@@ -47,6 +50,8 @@ execution:
     step_type: "generation"
   - skill: "weekly-synthesis-template"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
