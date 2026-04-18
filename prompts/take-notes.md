@@ -22,7 +22,8 @@ inputs:
     description: "The material to study — lecture notes, textbook chapters, or readings"
     example: "[Paste lecture notes or reading material here]"
     required: true
-    type: text
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
 connections:
   - target: note-taking
     type: derived_from

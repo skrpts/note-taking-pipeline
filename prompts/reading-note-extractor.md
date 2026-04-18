@@ -22,7 +22,8 @@ inputs:
     description: "The text from the reading to process"
     example: "[Paste reading content here]"
     required: true
-    type: text
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
 connections:
   - target: content-distillation
     type: derived_from

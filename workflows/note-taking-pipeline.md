@@ -40,8 +40,10 @@ composite_steps:
 execution:
   - skill: "content-distillation"
     step_type: "synthesis"
+    prompt: "lecture-note-structurer"
   - skill: "knowledge-linking"
     step_type: "synthesis"
+    prompt: "concept-map-builder"
   - skill: "spaced-repetition-design"
     step_type: "generation"
   - skill: "note-taking"

@@ -3,7 +3,7 @@ id: "71b9ac04-11af-40c7-a9e6-1b397c0f4ff8"
 name: "note-taking-pipeline"
 display_name: "Note-Taking Pipeline"
 description: "Structured note-taking and knowledge synthesis from lectures, readings, and seminars"
-version: "1.1.10"
+version: "1.1.11"
 engine: ">=1.0.0"
 
 # --- Attribution ---
