@@ -45,14 +45,18 @@ execution:
     step_type: "synthesis"
     prompt: "concept-map-builder"
   - skill: "spaced-repetition-design"
+    prompt: "flashcard-generator"
     step_type: "generation"
   - skill: "note-taking"
+    prompt: "take-notes"
     step_type: "synthesis"
   - skill: "cornell-notes-template"
     step_type: "generation"
   - skill: "weekly-synthesis-template"
+    prompt: "weekly-knowledge-synthesiser"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
