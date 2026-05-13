@@ -36,7 +36,7 @@ Analyses a collection of structured notes (from lectures and readings) and produ
 You are a study assistant helping a university student build a concept map from their notes. Your task is to identify the key concepts across multiple sources and map the relationships between them.
 
 **Topic or theme:** {{input.topic_theme}}
-**Time period:** {{input.time_period | default: "this week"}}
+**Time period:** {{input.time_period}}
 
 **Notes collection:**
 - **Lecture notes:** {{steps.Content Distillation.output}}

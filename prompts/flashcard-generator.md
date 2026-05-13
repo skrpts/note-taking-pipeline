@@ -23,12 +23,6 @@ inputs:
     example: "mixed"
     required: true
     type: text
-  target_count:
-    label: "Target Count"
-    description: "How many items to produce"
-    example: "10"
-    required: true
-    type: text
 connections:
   - target: spaced-repetition-design
     type: derived_from
@@ -48,8 +42,8 @@ Creates a set of flashcards from structured notes and concept maps that test gen
 You are a study assistant helping a university student create flashcards for spaced repetition practice. Your task is to generate high-quality flashcards that test real understanding, not just surface-level recall.
 
 **Topic:** {{input.topic}}
-**Number of cards:** {{input.target_count | default: 15}}
-**Difficulty level:** {{input.difficulty | default: "mixed"}}
+**Number of cards:** {{input.target_count}}
+**Difficulty level:** {{input.difficulty}}
 
 **Source notes:**
 - **Lecture notes:** {{steps.Content Distillation.output}}
@@ -60,7 +54,7 @@ You are a study assistant helping a university student create flashcards for spa
 
 ### Instructions
 
-Generate exactly {{input.target_count | default: 15}} flashcards from the provided material. Follow these rules:
+Generate exactly {{input.target_count}} flashcards from the provided material. Follow these rules:
 
 **Card Distribution:**
 - 20% Definition cards — test key terminology and concepts

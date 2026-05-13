@@ -56,14 +56,14 @@ You are a study assistant helping a university student organise their lecture no
 **Module:** {{input.module_name}}
 **Lecture title:** {{input.lecture_title}}
 **Lecture date:** {{input.lecture_date}}
-**Preferred method:** {{input.note_method | default: "cornell"}}
+**Preferred method:** {{input.note_method}}
 
 **Raw notes:**
 {{input.raw_notes}}
 
 ### Instructions
 
-Structure these notes using the {{input.note_method | default: "cornell"}} method. Follow these rules precisely:
+Structure these notes using the {{input.note_method}} method. Follow these rules precisely:
 
 **If using the Cornell method:**
 1. Create a **Main Notes** section on the right (approximately 70% of the content width). Organise the lecture content into clear sections with descriptive headings. Use bullet points for individual ideas, and indent sub-points. Define technical terms in bold on first use.

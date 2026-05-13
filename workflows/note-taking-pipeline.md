@@ -51,7 +51,7 @@ execution:
     prompt: "take-notes"
     step_type: "synthesis"
   - skill: "cornell-notes-template"
-    step_type: "generation"
+    step_type: "local.template"
   - skill: "weekly-synthesis-template"
     prompt: "weekly-knowledge-synthesiser"
     step_type: "synthesis"
@@ -59,8 +59,8 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
