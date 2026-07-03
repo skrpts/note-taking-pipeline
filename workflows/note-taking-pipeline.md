@@ -41,23 +41,30 @@ execution:
   - skill: "content-distillation"
     step_type: "synthesis"
     prompt: "lecture-note-structurer"
+    output: { name: "structured_notes", type: "text" }
   - skill: "knowledge-linking"
     step_type: "synthesis"
     prompt: "concept-map-builder"
+    output: { name: "concept_map", type: "text" }
   - skill: "spaced-repetition-design"
     prompt: "flashcard-generator"
     step_type: "generation"
+    output: { name: "flashcards", type: "list" }
   - skill: "note-taking"
     prompt: "take-notes"
     step_type: "synthesis"
+    output: { name: "notes", type: "text" }
   - skill: "cornell-notes-template"
     step_type: "local.template"
+    output: { name: "cornell_notes", type: "text" }
   - skill: "weekly-synthesis-template"
     prompt: "weekly-knowledge-synthesiser"
     step_type: "synthesis"
+    output: { name: "weekly_synthesis", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_notes", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
