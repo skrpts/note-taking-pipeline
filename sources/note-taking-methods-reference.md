@@ -50,7 +50,7 @@ Research consistently shows the Cornell method improves retention compared to un
 The Zettelkasten method aligns with research on elaborative encoding and retrieval practice. By forcing students to express ideas in their own words and connect them to existing knowledge, it promotes deep processing. Ahrens (2017) popularised the method for academic work in "How to Take Smart Notes."
 
 **Best For:**
-- Long-term knowledge building across a degree programme
+- Long-term knowledge building across a degree program
 - Research-heavy disciplines requiring synthesis across many sources
 - Essay and dissertation writing where arguments draw on multiple sources
 
@@ -61,7 +61,7 @@ The Zettelkasten method aligns with research on elaborative encoding and retriev
 
 ## 3. The Outline Method
 
-**Origin:** Traditional hierarchical note-taking, formalised in study skills literature.
+**Origin:** Traditional hierarchical note-taking, formalized in study skills literature.
 
 **Structure:**
 - **Level 1:** Main topics or lecture sections
@@ -70,7 +70,7 @@ The Zettelkasten method aligns with research on elaborative encoding and retriev
 - **Level 4:** Specific data, quotations, or references
 
 **Evidence Base:**
-The outline method leverages the well-established benefits of hierarchical organisation for memory. Kiewra (1985) found that organised notes led to better recall than linear transcription. The method's weakness is that it privileges structure over connection — it captures what was said but not how ideas relate across topics.
+The outline method leverages the well-established benefits of hierarchical organization for memory. Kiewra (1985) found that organized notes led to better recall than linear transcription. The method's weakness is that it privileges structure over connection — it captures what was said but not how ideas relate across topics.
 
 **Best For:**
 - Well-structured lectures with clear hierarchies
@@ -88,9 +88,9 @@ The outline method leverages the well-established benefits of hierarchical organ
 
 **Structure:**
 - **Central node:** The main topic or question
-- **Primary branches:** Major subtopics radiating from the centre
+- **Primary branches:** Major subtopics radiating from the center
 - **Secondary branches:** Supporting details, examples, and connections
-- **Visual elements:** Colours, icons, and spatial positioning to aid memory
+- **Visual elements:** Colors, icons, and spatial positioning to aid memory
 
 **Evidence Base:**
 Research on mind mapping is mixed. Farrand, Hussain, & Hennessy (2002) found that mind maps improved recall of factual information by 10-15% compared to preferred study methods. However, the benefit appears to depend on the student's comfort with visual-spatial thinking. Mind mapping is most effective when combined with other methods rather than used in isolation.

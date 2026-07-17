@@ -29,7 +29,7 @@ metadata:
 
 ## Purpose
 
-Analyses a collection of structured notes (from lectures and readings) and produces a concept map that reveals how ideas connect, support, contradict, or extend one another across sources. This is where isolated notes become integrated understanding.
+Analyzes a collection of structured notes (from lectures and readings) and produces a concept map that reveals how ideas connect, support, contradict, or extend one another across sources. This is where isolated notes become integrated understanding.
 
 ## Prompt
 
@@ -44,7 +44,7 @@ You are a study assistant helping a university student build a concept map from 
 
 ### Instructions
 
-Analyse the provided notes and produce a concept map with the following structure:
+Analyze the provided notes and produce a concept map with the following structure:
 
 **1. Concept Nodes**
 Identify the 8-15 most important concepts across all provided notes. For each concept, provide:

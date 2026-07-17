@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.26
+GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
+
 ## v1.1.25
 GH#745 — declare per-step `output: {name, type}` on every execution step (structured_notes/text, concept_map/text, flashcards/list, notes/text, cornell_notes/text, weekly_synthesis/text, polished_notes/text). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
 
@@ -19,4 +22,4 @@ Bundle re-signed with canonical engine signing pipeline (Wave 2 migration).
 Signature fix — RELEASE_NOTES.md now included in integrity checksum.
 
 ## v1.1.19
-Initial catalogue release with full structural and content-quality validation. All scanner checks pass.
+Initial catalog release with full structural and content-quality validation. All scanner checks pass.

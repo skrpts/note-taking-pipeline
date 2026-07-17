@@ -73,7 +73,7 @@ For each card, provide:
 **Type:** [Definition | Explanation | Comparison | Application | Elaborative Interrogation]
 **Topic:** [specific topic within the module]
 **Difficulty:** [Beginner | Intermediate | Advanced]
-**Bloom's Level:** [Remember | Understand | Apply | Analyse | Evaluate]
+**Bloom's Level:** [Remember | Understand | Apply | Analyze | Evaluate]
 
 **Front:** [The question — clear, specific, and answerable in 15-30 seconds of thought]
 

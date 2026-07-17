@@ -27,7 +27,7 @@ metadata:
 
 ## Week at a Glance
 
-_3-5 sentences summarising what was covered this week and how it fits into the module's broader narrative._
+_3-5 sentences summarizing what was covered this week and how it fits into the module's broader narrative._
 
 [Write overview here]
 

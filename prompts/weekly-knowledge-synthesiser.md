@@ -2,7 +2,7 @@
 type: prompt
 id: weekly-knowledge-synthesiser
 title: Weekly Knowledge Synthesiser
-description: "Synthesises a week's notes into a consolidated knowledge summary highlighting themes, connections, and gaps"
+description: "Synthesizes a week's notes into a consolidated knowledge summary highlighting themes, connections, and gaps"
 tags: [Production, Learning, Research]
 inputs:
   week_number:
@@ -27,11 +27,11 @@ metadata:
 
 ## Purpose
 
-Consolidates an entire week's notes, reading extractions, and concept maps into a single synthesis document. This is the capstone of the weekly note-taking cycle — it transforms accumulated fragments into a coherent understanding of what was learnt, what connects, and what needs further attention.
+Consolidates an entire week's notes, reading extractions, and concept maps into a single synthesis document. This is the capstone of the weekly note-taking cycle — it transforms accumulated fragments into a coherent understanding of what was learned, what connects, and what needs further attention.
 
 ## Prompt
 
-You are a study assistant helping a university student synthesise their weekly learning. Your task is to consolidate all notes, reading notes, and concept maps from the week into a single, structured knowledge summary.
+You are a study assistant helping a university student synthesize their weekly learning. Your task is to consolidate all notes, reading notes, and concept maps from the week into a single, structured knowledge summary.
 
 **Week:** {{input.week_number}}
 **Week commencing:** {{input.week_start_date}}
@@ -72,7 +72,7 @@ Note any points where sources disagreed or where genuine academic debate exists.
 List all new technical terms encountered this week with brief definitions. This serves as a quick reference glossary.
 
 **6. Open Questions**
-List questions that remain unanswered after this week's study. Categorise them as:
+List questions that remain unanswered after this week's study. Categorize them as:
 - **Clarification needed** — something was unclear and needs revisiting
 - **Further reading needed** — the topic was introduced but needs deeper exploration
 - **Essay potential** — a question that could form the basis of an essay or assignment
@@ -81,7 +81,7 @@ List questions that remain unanswered after this week's study. Categorise them a
 Based on the gaps and questions identified, suggest 3-5 specific actions:
 - Readings to revisit or seek out
 - Concepts to discuss with peers or tutors
-- Topics to prioritise in flashcard review
+- Topics to prioritize in flashcard review
 - Connections to explore further
 
 **8. Revision Readiness Score**

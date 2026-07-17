@@ -2,7 +2,7 @@
 type: skill
 id: content-distillation
 title: Content Distillation
-description: "Transforms raw, unstructured academic content into clean, organised notes using evidence-based note-taking methods"
+description: "Transforms raw, unstructured academic content into clean, organized notes using evidence-based note-taking methods"
 tags: [Production, Tested, Academic, Learning]
 connections:
   - target: llm-service
@@ -27,7 +27,7 @@ This skill understands the difference between linear lecture content (which bene
 ### For Lecture Content
 1. Identify the lecture's main topic, subtopics, and learning objectives
 2. Extract key concepts, definitions, theories, and examples
-3. Organise into a hierarchical structure — main headings for topics, subheadings for subtopics
+3. Organize into a hierarchical structure — main headings for topics, subheadings for subtopics
 4. Generate cue questions in the left margin (Cornell style) that test understanding of each section
 5. Write a summary paragraph capturing the lecture's core message in the student's own words
 6. Flag any points that were unclear or need follow-up

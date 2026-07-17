@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Knowledge Linking analyses a collection of structured notes and identifies the conceptual relationships between them. It produces concept maps and synthesis documents that reveal how ideas connect, contradict, support, or extend one another across different sources, lectures, and readings.
+Knowledge Linking analyzes a collection of structured notes and identifies the conceptual relationships between them. It produces concept maps and synthesis documents that reveal how ideas connect, contradict, support, or extend one another across different sources, lectures, and readings.
 
 This skill draws on the Zettelkasten principle of atomic, interconnected notes. Rather than treating each lecture or reading as an isolated unit, it weaves them into a growing web of understanding that mirrors how experts think about a subject.
 

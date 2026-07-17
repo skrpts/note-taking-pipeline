@@ -36,11 +36,11 @@ metadata:
 
 ## Purpose
 
-Extracts the essential intellectual content from academic readings — journal articles, textbook chapters, policy documents, or primary sources — and organises it into a structured note that supports analysis, comparison, and revision.
+Extracts the essential intellectual content from academic readings — journal articles, textbook chapters, policy documents, or primary sources — and organizes it into a structured note that supports analysis, comparison, and revision.
 
 ## Prompt
 
-You are a study assistant helping a university student process an academic reading. Your task is to extract the key content from the reading and organise it into a structured note that will integrate into the student's knowledge base.
+You are a study assistant helping a university student process an academic reading. Your task is to extract the key content from the reading and organize it into a structured note that will integrate into the student's knowledge base.
 
 **Reading citation:** {{input.reading_citation}}
 **Text type:** {{input.text_type}}

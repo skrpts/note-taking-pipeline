@@ -54,10 +54,10 @@ execution:
     prompt: "take-notes"
     step_type: "synthesis"
     output: { name: "notes", type: "text" }
-  - skill: "cornell-notes-template"
+  - id: "cornell-notes-template"
     step_type: "local.template"
     output: { name: "cornell_notes", type: "text" }
-  - skill: "weekly-synthesis-template"
+  - id: "weekly-synthesis-template"
     prompt: "weekly-knowledge-synthesiser"
     step_type: "synthesis"
     output: { name: "weekly_synthesis", type: "text" }
@@ -72,7 +72,7 @@ execution:
 
 ## Overview
 
-The Note-Taking Pipeline transforms raw academic input — lectures, readings, seminars — into structured, interconnected knowledge that supports long-term retention and exam readiness. It moves through five stages: structuring raw notes, extracting key ideas from readings, linking concepts across sources, generating flashcards for active recall, and synthesising everything into a weekly knowledge summary.
+The Note-Taking Pipeline transforms raw academic input — lectures, readings, seminars — into structured, interconnected knowledge that supports long-term retention and exam readiness. It moves through five stages: structuring raw notes, extracting key ideas from readings, linking concepts across sources, generating flashcards for active recall, and synthesizing everything into a weekly knowledge summary.
 
 ## Pipeline Stages
 
@@ -132,7 +132,7 @@ The pipeline is complete when the student has:
 1. Structured notes for every lecture and reading in the week
 2. A concept map linking ideas across sources
 3. A set of flashcards ready for spaced repetition practice
-4. A weekly synthesis document summarising key learning
+4. A weekly synthesis document summarizing key learning
 
 ## Notes
 
@@ -176,7 +176,7 @@ The pipeline is complete when the student has:
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

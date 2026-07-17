@@ -2,7 +2,7 @@
 type: prompt
 id: lecture-note-structurer
 title: Lecture Note Structurer
-description: "Structures raw lecture notes into an organised, searchable format using the Cornell or outline method"
+description: "Structures raw lecture notes into an organized, searchable format using the Cornell or outline method"
 tags: [Production, Learning, Research]
 inputs:
   module_name:
@@ -51,7 +51,7 @@ Transforms raw, unstructured lecture notes into a clean, well-organised document
 
 ## Prompt
 
-You are a study assistant helping a university student organise their lecture notes. Your task is to take raw, unstructured lecture notes and transform them into a well-organised document that will be useful for revision.
+You are a study assistant helping a university student organize their lecture notes. Your task is to take raw, unstructured lecture notes and transform them into a well-organised document that will be useful for revision.
 
 **Module:** {{input.module_name}}
 **Lecture title:** {{input.lecture_title}}
@@ -66,7 +66,7 @@ You are a study assistant helping a university student organise their lecture no
 Structure these notes using the {{input.note_method}} method. Follow these rules precisely:
 
 **If using the Cornell method:**
-1. Create a **Main Notes** section on the right (approximately 70% of the content width). Organise the lecture content into clear sections with descriptive headings. Use bullet points for individual ideas, and indent sub-points. Define technical terms in bold on first use.
+1. Create a **Main Notes** section on the right (approximately 70% of the content width). Organize the lecture content into clear sections with descriptive headings. Use bullet points for individual ideas, and indent sub-points. Define technical terms in bold on first use.
 2. Create a **Cue Column** on the left with questions, keywords, and prompts that correspond to each section of the main notes. These cues should test understanding, not just recall — phrase them as "why" and "how" questions wherever possible.
 3. Write a **Summary** section at the bottom (3-5 sentences) capturing the lecture's core argument or message in the student's own words. This summary should be useful as a standalone revision aid.
 

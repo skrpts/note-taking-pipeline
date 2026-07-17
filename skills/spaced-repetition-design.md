@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Spaced Repetition Design creates flashcards and retrieval practice materials that maximise long-term retention. It applies evidence-based principles from cognitive science — the testing effect, desirable difficulty, interleaving, and elaborative interrogation — to produce cards that genuinely test understanding rather than encouraging shallow memorisation.
+Spaced Repetition Design creates flashcards and retrieval practice materials that maximize long-term retention. It applies evidence-based principles from cognitive science — the testing effect, desirable difficulty, interleaving, and elaborative interrogation — to produce cards that genuinely test understanding rather than encouraging shallow memorisation.
 
 This skill understands that not all flashcards are equal. A card that asks "What year was X?" tests simple recall. A card that asks "Why did X lead to Y, and what alternative outcomes were possible?" tests comprehension, analysis, and application. This skill produces cards across Bloom's taxonomy levels appropriate to the material.
 
@@ -43,7 +43,7 @@ Cards should be challenging enough to require genuine retrieval effort but not s
 Every card is tagged with:
 - **Topic** — the subject area or module section
 - **Difficulty** — beginner, intermediate, or advanced
-- **Bloom's level** — remember, understand, apply, analyse, evaluate, or create
+- **Bloom's level** — remember, understand, apply, analyze, evaluate, or create
 - **Source** — which note or reading the card was derived from
 
 ## Quality Criteria
@@ -51,7 +51,7 @@ Every card is tagged with:
 - No card should be answerable by pattern matching or keyword recognition alone
 - Every "back" answer should be self-contained — a student seeing only the answer should understand it
 - Cards derived from the same concept should be interleaved with cards from other topics
-- The set should include at least 30% higher-order cards (apply, analyse, evaluate) for university-level material
+- The set should include at least 30% higher-order cards (apply, analyze, evaluate) for university-level material
 - Avoid cards that test trivial or easily looked-up facts unless those facts are foundational
 
 ## Constraints

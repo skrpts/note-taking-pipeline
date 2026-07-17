@@ -18,7 +18,7 @@ This guide explains how to move from passive note-taking — writing down what y
 
 ## Why Most Note-Taking Fails
 
-The typical student approach to notes is: write everything down in lectures, never look at it again until exam season, then try to re-learn from poorly organised documents. Research consistently shows this approach is ineffective:
+The typical student approach to notes is: write everything down in lectures, never look at it again until exam season, then try to re-learn from poorly organized documents. Research consistently shows this approach is ineffective:
 
 - **Transcription is not learning.** Writing down what a lecturer says verbatim engages your motor system, not your understanding. Mueller & Oppenheimer (2014) found that students who took notes by hand (forcing selectivity) outperformed those who transcribed on laptops.
 - **Isolated notes decay.** A note from Week 3 that is never connected to anything from Week 7 becomes a dead end. Knowledge that is not integrated into a broader structure is rapidly forgotten.
@@ -56,7 +56,7 @@ Processing should happen within 24 hours of capture. This is where passive notes
 3. **Identify connections** to previous notes, readings, or lectures. Mark these explicitly with link markers.
 4. **Flag gaps** — anything you did not understand, need to look up, or want to discuss with peers or tutors.
 
-### Phase 3: Connect and Synthesise
+### Phase 3: Connect and Synthesize
 
 This phase happens weekly and is what transforms note-taking from a recording activity into a learning activity.
 
