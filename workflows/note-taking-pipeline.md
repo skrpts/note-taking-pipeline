@@ -160,6 +160,7 @@ The pipeline is complete when the student has:
 | `{{input.difficulty}}` | No | Flashcard difficulty level | `mixed` |
 | `{{input.week_number}}` | No | Week number for synthesis | `5` |
 | `{{input.week_start_date}}` | No | Week commencing date for synthesis | `2026-03-16` |
+| `{{input.study_material}}` | Yes | The material to study — lecture notes, textbook chapters, or readings | `[Paste lecture notes or reading material here]` |
 
 ## Outputs
 
