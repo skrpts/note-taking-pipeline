@@ -7,6 +7,8 @@ tags: [Production, Tested, Learning, Research]
 connections:
   - target: content-distillation
     type: uses
+  - target: reading-extraction
+    type: uses
   - target: knowledge-linking
     type: uses
   - target: spaced-repetition-design
@@ -25,6 +27,13 @@ connections:
     type: uses
   - target: weekly-synthesis-template
     type: uses
+inputs:
+  reading_content:
+    label: "Reading Content"
+    description: "A paper, chapter, or article to extract structured notes from"
+    example: "[Paste the full text of the reading, or its abstract and key sections]"
+    required: true
+    type: text
 metadata:
   estimated_duration: "15-45 minutes"
   trigger: manual
@@ -42,6 +51,13 @@ execution:
     step_type: "synthesis"
     prompt: "lecture-note-structurer"
     output: { name: "structured_notes", type: "text" }
+  - skill: "reading-extraction"
+    prompt: "reading-note-extractor"
+    step_type: "generation"
+    output: { name: "reading_notes", type: "text" }
+    bindings:
+      reading_content:
+        from_input: "reading_content"
   - skill: "knowledge-linking"
     step_type: "synthesis"
     prompt: "concept-map-builder"
@@ -54,6 +70,10 @@ execution:
     prompt: "take-notes"
     step_type: "synthesis"
     output: { name: "notes", type: "text" }
+    bindings:
+      source:
+        from_step: "Spaced Repetition Design"
+        field: output
   - id: "cornell-notes-template"
     step_type: "local.template"
     output: { name: "cornell_notes", type: "text" }
@@ -68,6 +88,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "weekly-synthesis-template"
+        field: output
 ---
 
 ## Overview

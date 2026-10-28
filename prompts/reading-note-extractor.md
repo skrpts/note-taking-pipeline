@@ -4,6 +4,7 @@ id: reading-note-extractor
 title: Reading Note Extractor
 description: "Extracts key arguments, evidence, and questions from academic readings into structured notes"
 tags: [Production, Academic, Learning, Research]
+context_params:
 inputs:
   reading_citation:
     label: "Reading Citation"
@@ -45,7 +46,7 @@ You are a study assistant helping a university student process an academic readi
 **Reading citation:** {{input.reading_citation}}
 **Text type:** {{input.text_type}}
 **Reading content or summary:**
-{{input.reading_content}}
+{{step.context.reading_content}}
 
 ### Instructions
 
