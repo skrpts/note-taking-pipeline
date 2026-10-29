@@ -72,7 +72,7 @@ execution:
     output: { name: "notes", type: "text" }
     bindings:
       source:
-        from_step: "Spaced Repetition Design"
+        from_step: "Knowledge Linking"
         field: output
   - id: "cornell-notes-template"
     step_type: "local.template"

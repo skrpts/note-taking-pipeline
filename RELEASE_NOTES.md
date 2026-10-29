@@ -1,5 +1,10 @@
 # Release Notes
 
+## v1.1.30
+GH#1100 retrospective repair — the data flowed backwards.
+
+`take-notes`'s slot is labelled **"Prior Analysis"** and was bound to Spaced Repetition Design, whose output is the flashcards. Flashcards are generated FROM notes, so the note-taking stage was receiving a derivative of its own product. Re-bound to Knowledge Linking, whose concept map is the prior analysis the label asks for.
+
 ## v1.1.29
 GH#1045 — wire the `reading-note-extractor` prompt into the pipeline so Stage 2 actually runs. It shipped declared but uninvoked, so a package whose own documentation promises a Reading Extraction stage — "pulls out the key arguments, supporting evidence, author position and terminology" — never produced any of it, and knowledge linking and weekly synthesis consumed notes that had no reading extraction in them.
 
