@@ -25,8 +25,10 @@ connections:
     type: references
   - target: cornell-notes-template
     type: uses
-  - target: weekly-synthesis-template
+  - target: weekly-synthesis
     type: uses
+  - target: weekly-synthesis-template
+    type: references
 inputs:
   reading_content:
     label: "Reading Content"
@@ -44,7 +46,7 @@ composite_steps:
   - "spaced-repetition-design"
   - "note-taking"
   - "cornell-notes-template"
-  - "weekly-synthesis-template"
+  - "weekly-synthesis"
   - "language-polish"
 execution:
   - skill: "content-distillation"
@@ -77,7 +79,7 @@ execution:
   - id: "cornell-notes-template"
     step_type: "local.template"
     output: { name: "cornell_notes", type: "text" }
-  - id: "weekly-synthesis-template"
+  - skill: "weekly-synthesis"
     prompt: "weekly-knowledge-synthesiser"
     step_type: "synthesis"
     output: { name: "weekly_synthesis", type: "text" }
@@ -90,7 +92,7 @@ execution:
       grammar_strictness: "Professional"
     bindings:
       source:
-        from_step: "weekly-synthesis-template"
+        from_step: "Weekly Synthesis"
         field: output
 ---
 
@@ -144,7 +146,7 @@ Invoke the **flashcard-generator** prompt using the **spaced-repetition-design**
 
 **Trigger:** End of each study week, or before a revision session.
 
-Invoke the **weekly-knowledge-synthesiser** prompt using the **knowledge-linking** skill. This stage consolidates all notes, reading extractions, and concept maps from the week into a single summary document. It highlights key themes, unresolved questions, and areas needing further study.
+Invoke the **weekly-knowledge-synthesiser** prompt using the **weekly-synthesis** skill. This stage consolidates all notes, reading extractions, and concept maps from the week into a single summary document. It highlights key themes, unresolved questions, and areas needing further study.
 
 **Input:** All notes and maps from the week via `{{weekly_notes}}`, plus `{{module_name}}`
 **Output:** Weekly synthesis document using the weekly-synthesis-template

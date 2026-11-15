@@ -1,5 +1,24 @@
 # Release Notes
 
+## v1.1.31
+GH#1214 — the weekly synthesis stage never ran, and the pipeline's final output was reading from it.
+
+The stage was declared with `id: "weekly-synthesis-template"`, pointing at a template. A template is
+an asset, and only a skill or a prompt can back an executable step, so the entry matched no planner
+branch and was dropped silently — no error, no warning. **And the language-polish step, which is this
+workflow's output step, took its input from that stage** — so the pipeline's deliverable was derived
+from a stage that produced nothing.
+
+The stage is now backed by a new **Weekly Synthesis** skill, and the downstream binding names that
+skill rather than the template. The weekly synthesis template remains declared as reference material,
+which is its correct role.
+
+The documentation is corrected in the same version. It previously told authors to invoke this prompt
+"using the knowledge-linking skill" — that skill already runs the concept-map stage, and a second
+entry on one skill is refused at validation, so the instruction could not have been followed.
+
+Skills 4 → 5, total 13 → 14.
+
 ## v1.1.30
 GH#1100 retrospective repair — the data flowed backwards.
 
